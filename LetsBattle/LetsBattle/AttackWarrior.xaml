@@ -1,0 +1,15 @@
+﻿<Window x:Class="LetsBattle.AttackWarrior"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LetsBattle"
+        mc:Ignorable="d"
+        Title="AttackWarrior" Height="300" Width="300"
+        ResizeMode="NoResize">
+    <Grid>
+        <Button x:Name="B_attack_heavy" Content="Heavy Attack" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="131" Click="B_attack_heavy_Click"/>
+        <Button x:Name="B_attack_light" Content="Light Attack" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" Width="131" Click="B_attack_light_Click"/>
+
+    </Grid>
+</Window>

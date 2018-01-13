@@ -1,0 +1,31 @@
+﻿<Window x:Class="LetsBattle.CreatePlayer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LetsBattle"
+        mc:Ignorable="d"
+        Title="CreatePlayer" Height="249.738" Width="333.77"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="b_readInput" Content="Write" HorizontalAlignment="Left" Margin="10,151,0,0" VerticalAlignment="Top" Width="306" Click="B_readInput_Click" Height="58"/>
+        <TextBox x:Name="tb_inputName" HorizontalAlignment="Left" Height="23" Margin="194,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Would you rather be: " HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cb_Class" HorizontalAlignment="Left" Margin="194,38,0,0" VerticalAlignment="Top" Width="120">
+            <ListBoxItem Content="Warrior" TabIndex="0"/>
+            <ListBoxItem Content="Mage" TabIndex="1"/>
+        </ComboBox>
+        <Label Content="Could you write me your name: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="184"/>
+        <TextBox x:Name="tb_Defense" HorizontalAlignment="Left" Height="23" Margin="194,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="23" Text="0"/>
+        <TextBox x:Name="tb_Damage" HorizontalAlignment="Left" Height="23" Margin="194,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="23" Text="0"/>
+        <TextBox x:Name="tb_Health" HorizontalAlignment="Left" Height="23" Margin="194,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="23" Text="0"/>
+        <Label Content="Health: " HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top"/>
+        <Label Content="Damage: " HorizontalAlignment="Left" Margin="10,92,0,0" VerticalAlignment="Top"/>
+        <Label Content="Defense: " HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top"/>
+        <Button Content="Generate Stats" HorizontalAlignment="Left" Margin="217,67,0,0" VerticalAlignment="Top" Width="99" Height="79" Click="Button_Click"/>
+
+    </Grid>
+</Window>
